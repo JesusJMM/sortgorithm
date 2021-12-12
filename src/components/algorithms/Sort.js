@@ -39,14 +39,14 @@ export default function BubleSort(props) {
     let arr = array.current
     const step = canvas.current.width / arr.length
     function draw() {
-      if (props.play) {
+      if (props.play && props.elements > 0) {
         array.current = sortF.current(arr)
       }
       arr = array.current
       // draw
       ctx.current.clearRect(0, 0, canvas.current.width, canvas.current.height)
       for (let i = 0; i < arr.length; i++) {
-        ctx.current.strokeStyle = '#000a'
+        ctx.current.strokeStyle = '#0007'
         if (arr[i] === target.current) ctx.current.strokeStyle = 'orange'
         lines.current[arr[i]].lerpPos(i * step + step / 2, 0)
         lines.current[arr[i]].draw()

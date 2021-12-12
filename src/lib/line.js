@@ -19,7 +19,7 @@ export default class Line {
     return v0 + t * (v1 - v0)
   }
   lerpPos(x, y){
-    this.x = this.lerp(this.x, x, 0.1)
-    this.y = this.lerp(this.y, y, 0.1)
+    this.x = this.lerp(this.x, x, 0.2)
+    this.y = this.lerp(this.y, y, 0.2)
   }
 }
