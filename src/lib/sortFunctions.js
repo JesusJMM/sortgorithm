@@ -7,7 +7,7 @@ export function bubbleSort() {
     }
     a++
     if (a > arr.length) a = 0
-    return out
+    return {out, cur: a}
   }
 }
 
@@ -28,7 +28,7 @@ export function selectionSort(){
     }
 
     a++
-    return out
+    return {out, cur: a}
   }
 }
 export function mergeSortAnimated(){
@@ -36,7 +36,7 @@ export function mergeSortAnimated(){
   return arr => {
     deep += 0.02
     const [out,  ] = MergeSort(arr, Math.ceil(deep))
-    return out
+    return {out, cur: -1}
   }
 }
 const max = (a, b) => a > b ? a : b;
