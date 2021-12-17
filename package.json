@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "mit",
-  "homepage": "http://jesusjmm.github.io/sortgorithm",
+  "homepage": "https://jesusjmm.github.io/sortgorithm/",
   "dependencies": {
     
     "@chakra-ui/react": "^1.7.2",
