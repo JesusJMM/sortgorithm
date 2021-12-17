@@ -18,8 +18,8 @@ export default class Line {
   lerp(v0, v1, t){
     return v0 + t * (v1 - v0)
   }
-  lerpPos(x, y){
-    this.x = this.lerp(this.x, x, 0.2)
-    this.y = this.lerp(this.y, y, 0.2)
+  lerpPos(x, y, p = 0.2){
+    this.x = this.lerp(this.x, x, p)
+    this.y = this.lerp(this.y, y, p)
   }
 }

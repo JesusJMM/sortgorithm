@@ -1,6 +1,7 @@
 import Bar from './components/bar'
 import './App.css'
 import Show from './components/show.js'
+import Sidebar from './components/sidebar.js';
 import { useState } from 'react';
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
   const [play, setPlay] = useState(false)
   const [restart, setRestart] = useState(0)
   const [func, setFunction] = useState('bubbleSort')
+  const [sidebar, setSidebar] = useState(false)
+  const toggleSidebar = () => {setSidebar(!sidebar); console.log(sidebar)}
   const props = {
     target,
     setTarget: e => setTarget(e.target.value),
@@ -19,12 +22,14 @@ function App() {
     restart,
     setRestart: () => {setRestart(restart+1)},
     func,
-    setFunction: e => setFunction(e.target.value)
+    setFunction: e => setFunction(e.target.value),
+    toggleSidebar
   }
   return (
     <div className="app">
       <Show {...props}/>
-      <Bar {...props}/>
+      <Bar {...props} toggleSidebar={setSidebar}/>
+      <Sidebar algorithm={func} isOpen={sidebar} onClose={toggleSidebar} />
     </div>
   );
 }

@@ -1,6 +1,13 @@
 .app{
+  box-sizing: border-box;
+  padding-top:4px;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4em;
+}
+@media screen and (max-width: 520px){
+  .app{
+    grid-template-rows: 1.5fr 1fr;
+  } 
 }

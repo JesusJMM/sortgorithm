@@ -1,12 +1,6 @@
 import { VStack } from '@chakra-ui/react'
 import Sort from './algorithms/Sort.js'
-import { bubbleSort, selectionSort, mergeSortAnimated } from '../lib/sortFunctions.js'
-
-const sortFunctions = {
-  'bubbleSort' : bubbleSort,
-  'selectionSort': selectionSort,
-  'mergeSort': mergeSortAnimated,
-}
+import { functions as sortFunctions }from '../data/algorithmInfo.js'
 
 export default function Show(props) {
   return (
