@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "license": "mit",
+  "homepage": "http://jesusjmm.github.io/sortgorithm",
   "dependencies": {
+    
     "@chakra-ui/react": "^1.7.2",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
@@ -12,6 +14,7 @@
     "@testing-library/user-event": "^12.1.10",
     "ccompass": "^1.0.3",
     "framer-motion": "^4.1.17",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
@@ -20,6 +23,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
