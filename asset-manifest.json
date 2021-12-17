@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sortgorithm/static/css/main.9d7b3a27.chunk.css",
-    "main.js": "/sortgorithm/static/js/main.595bcd60.chunk.js",
-    "main.js.map": "/sortgorithm/static/js/main.595bcd60.chunk.js.map",
+    "main.js": "/sortgorithm/static/js/main.385faa68.chunk.js",
+    "main.js.map": "/sortgorithm/static/js/main.385faa68.chunk.js.map",
     "runtime-main.js": "/sortgorithm/static/js/runtime-main.045c189c.js",
     "runtime-main.js.map": "/sortgorithm/static/js/runtime-main.045c189c.js.map",
     "static/js/2.8ae4520f.chunk.js": "/sortgorithm/static/js/2.8ae4520f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.045c189c.js",
     "static/js/2.8ae4520f.chunk.js",
     "static/css/main.9d7b3a27.chunk.css",
-    "static/js/main.595bcd60.chunk.js"
+    "static/js/main.385faa68.chunk.js"
   ]
 }
